@@ -43,6 +43,8 @@ module.exports = {
          */
         author_id: {type: 'string', maxlength: 24, nullable: false},
         created_at: {type: 'dateTime', nullable: false},
+        quoted_by: {type: 'string', maxlength: 2000, nullable: true, validations: {isLength: {max: 300}}},
+        quoted_at: {type: 'string', maxlength: 2000, nullable: true, validations: {isLength: {max: 300}}},
         /**
          * @deprecated: https://github.com/TryGhost/Ghost/issues/10286
          *
