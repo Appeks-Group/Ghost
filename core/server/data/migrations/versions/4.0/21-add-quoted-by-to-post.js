@@ -1,6 +1,6 @@
 const {createAddColumnMigration} = require('../../utils');
 
-module.exports = createAddColumnMigration('`post', 'quoted_by', {
+module.exports = createAddColumnMigration('posts', 'quoted_by', {
     type: 'text',
     nullable: true,
     defaultTo: null
